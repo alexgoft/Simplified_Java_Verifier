@@ -34,7 +34,7 @@ variables of that method, in order to
 separate between member variables and local variables.
 The ParseTools class contains several helper functions.
 
-(*)In order to create a Variable, the parsers call the 
+* In order to create a Variable, the parsers call the 
 which is responsible for creating all Variable objects that appear in a
 single line.
 
@@ -57,8 +57,8 @@ __syntaxtools package:__
 The Tool class supplies several helper functions that are used in different
 Areas of the program.
 
-The Regex class contains the common regular expressions used in the program.
 
-The symbols class contains the common symbols used in the program.
 
-Each package contains exception that classes in the package may throw.
+* The Regex class contains the common regular expressions used in the program.
+* The symbols class contains the common symbols used in the program.
+* Each package contains exception that classes in the package may throw.
