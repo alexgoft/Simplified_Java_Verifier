@@ -1,7 +1,7 @@
-# Simplified_Java_Verifier
+# Simplified Java Verifier
 Java verifier - a tool able to verify the validity of Java code; it knows how to read Java code and determine its validity, but not to translate it to bytecode.
 
-Design Remarks:
+## Design Remarks:
 
 One of the biggest questions was how to store the variables. At first glance
 An ArrayList of Variable objects might make sense, but the order of the
@@ -12,12 +12,12 @@ constant time. In addition, the values of variables, including any delimiters
 (" or '), are stored in the Variable object. This allows the API to be used
 For an actual java compiler, not just a code checker.
 
-main package:
+__main package:__
 The main method in this class is responsible for creating an array list
 Of the lines of code. This ArrayList is then sent to the main parser.
 
 
-parser package:
+__parser package:__
 
 We use a main parser that receives all the lines of the file,
 parsing them one by one.
@@ -39,7 +39,7 @@ which is responsible for creating all Variable objects that appear in a
 single line.
 
 
-variable and scope packages:
+__variable and scope packages:__
 The scope package contains the if/while block class and the method class.
 The classes "Variable" and "Method" represent a single variable/method
 accordingly. If the parsers encounter a new
@@ -53,7 +53,7 @@ fits the error, and then the main method (in class ) will exit
 the program. The exceptions mechanism that
 we used is described in the Answers to Questions section.
 
-syntaxtools package:
+__syntaxtools package:__
 The Tool class supplies several helper functions that are used in different
 Areas of the program.
 
