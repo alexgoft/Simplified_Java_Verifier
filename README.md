@@ -18,7 +18,6 @@ Of the lines of code. This ArrayList is then sent to the main parser.
 
 
 __parser package:__
-
 We use a main parser that receives all the lines of the file,
 parsing them one by one.
 At first, the parser saves all the member variables and the methods defined
