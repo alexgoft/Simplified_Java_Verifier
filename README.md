@@ -33,10 +33,6 @@ variables of that method, in order to
 separate between member variables and local variables.
 The ParseTools class contains several helper functions.
 
-* In order to create a Variable, the parsers call the 
-which is responsible for creating all Variable objects that appear in a
-single line.
-
 
 __variable and scope packages:__
 The scope package contains the if/while block class and the method class.
